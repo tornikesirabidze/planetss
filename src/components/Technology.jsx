@@ -16,8 +16,8 @@ function Technology() {
 		<Context.Provider value={[movetech, setMoveTech, techActive, setTechActive]}>
 
 
-			<div className=' overflow-hidden w-[100vw] tech-bg'>
-				<div className={` lg:flex hidden  scrolmain oveflow-hidden relative justify-between  transition-all `} style={{ width: `${window.innerWidth * 3}px`, left: `${movetech}px` }}>
+			<div className=' overflow-hidden-x w-[100vw] tech-bg'>
+				<div className={` lg:flex hidden  scrolmain oveflow-hidden-x relative justify-between  transition-all `} style={{ width: `${window.innerWidth * 3}px`, left: `${movetech}px` }}>
 					{TechnologyText.map((item, index) => (
 						<div className='flex gap-[13rem]  justify-start'>
 

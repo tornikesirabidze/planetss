@@ -189,6 +189,9 @@
     background-position: center;
     background-size: cover;
     height: 100vh;
+    overflow-x: hidden;
+
+    
 
 }
 
@@ -206,6 +209,7 @@
     background-position: center;
     background-size: cover;
     height: 100vh;
+    
 }
 
 .home-bg{
@@ -213,7 +217,7 @@
     background: url("./assets/hero/herobg.png") no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    
 
 }
 
@@ -299,7 +303,14 @@
 
     
 }
+@media (min-height: 940px){
+    .dest-bg, .crew-bg, .tech-bg{
+        
+        height: auto;
+        
+    }
 
+}
 
 
  

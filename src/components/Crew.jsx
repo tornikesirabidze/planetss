@@ -35,8 +35,8 @@ function Crew() {
 
 
 
-            <div className='overflow-hidden w-[100vw] crew-bg'>
-                <div className={`scrolmain overflow-hidden justify-between h-[100vh] transition-all  sm:flex hidden  relative z-[5]`} style={{ width: `${window.innerWidth * 4}px`, left: `${move}px` }}>
+            <div className=' overflow-hidden w-[100vw] crew-bg'>
+                <div className={`scrolmain justify-between overflow-hidden  h-[100vh] transition-all  sm:flex hidden  relative z-[5]`} style={{ width: `${window.innerWidth * 4}px`, left: `${move}px` }}>
                     {crewText.map((item, index) => (
                         <div key={index} className={` w-[100vw] h-[100vh] flex lg:flex-row justify-between flex-col lg:gap-[5rem] gap-[1rem] items-center `}>
                             <div className='flex flex-col pl-[5rem] w-full lg:items-start items-center  lg:text-start text-center  '>
@@ -67,7 +67,7 @@ function Crew() {
 
                 </div>
                 {/* mobile */}
-                <div className={`scrolmain overflow-hidden justify-between h-[100vh] transition-all  sm:hidden flex  relative z-[5]`} style={{ width: `${window.innerWidth * 4}px`, left: `${move}px` }}>
+                <div className={`scrolmain overflow-x-hidden justify-between h-[100vh] transition-all  sm:hidden flex  relative z-[5]`} style={{ width: `${window.innerWidth * 4}px`, left: `${move}px` }}>
                     {crewText.map((item, index) => (
                         <div key={index} className={` w-[100vw] h-[100vh] flex lg:flex-row justify-between flex-col lg:gap-[5rem] gap-[1rem] items-center  `}>
                             <div className='flex flex-col w-full mt-[10rem]   items-center   text-center  '>

@@ -11,8 +11,8 @@ function TechTab() {
 
 
 
-        <div className=' overflow-hidden w-full h-[100vh]'>
-            <div className={` flex  scrolmain oveflow-hidden relative justify-between  transition-all `} style={{ width: `${window.innerWidth * 3}px`, left: `${movetech}px` }}>
+        <div className=' overflow-x-hidden w-full h-[100vh]'>
+            <div className={` flex  scrolmain overflow-x-hidden relative justify-between  transition-all `} style={{ width: `${window.innerWidth * 3}px`, left: `${movetech}px` }}>
                 {TechnologyText.map((item, index) => (
                     <div className='flex flex-col gap-[2rem]  justify-start'>
 

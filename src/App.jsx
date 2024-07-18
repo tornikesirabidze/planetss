@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Routes, Route, useParams } from 'react-router-dom'
+import { Routes, Route, useParams, useNavigate } from 'react-router-dom'
 import './App.css'
 import Home from './components/Home'
 import Navbar from './components/Navbar'
@@ -8,10 +8,17 @@ import Destination from './components/Destination'
 import Technology from './components/Technology'
 import Desitnationpg from './components/Desitnationpg'
 import Crew from './components/Crew'
+import { useEffect } from 'react'
+
 export const IdIndex = React.createContext()
 
 
 function App() {
+//    const navigation=useNavigate()
+//    useEffect(() => {
+     
+//     navigation("/planetss/")
+//    }, [])
    
 
 

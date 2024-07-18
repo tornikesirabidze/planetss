@@ -56,8 +56,8 @@ function Navbar() {
 
     return (
         <div className='flex p-[2rem] items-center z-[6] justify-between lg:pl-[3.2rem] lg:pr-0 pr-[0] lg:pt-[2.5rem] pt-[0] fixed w-full'>
-            <img src={Logo} alt="Website Logo" className='h-[3rem] w-[3rem]' />
-            <div onClick={()=>SetCklick(!Click)} className='fixed sm:hidden flex right-6  z-[4] text-[2rem]'>
+            <img src={Logo} alt="Website Logo" className='lg:mt-0 mt-[2rem] h-[3rem] w-[3rem]' />
+            <div onClick={()=>SetCklick(!Click)} className='fixed sm:hidden pt-[2rem] flex right-6  z-[4] text-[2rem]'>
                 {Click?<FaBars className='text-white ' />:<FaX className='text-white' />}
             </div>
             <div className='h-[.1rem] w-full lg:bg-white bg-transparent relative bg-[#979797] opacity-[0.6] left-[4rem] rounded-md z-[5]' />
@@ -81,7 +81,7 @@ function Navbar() {
                 <ul className={`${Click ? `translate-x-[500px] hidden ${SetWidth}` :"translate-x-0 "} flex gap-[2rem] flex-col pb-[7rem] transition-all bg--color pl-[3rem] relative lg:pl-[12rem]  backdrop-blur-md  w-[15rem] h-[100vh] z-[999] border-white border-opacity-[0.01] items-start justify-center `}>
                     {navbar.map((item, index) => (
                         <Link key={index} to={item.link}>
-                            <div onClick={() => HendleaCtive(inHendleaCtivedex)} className='flex flex-row w-[12rem] justify-between gap-[0.68rem] subheading--300 cursor-pointer z-[3] text-white'>
+                            <div onClick={() => HendleaCtive(index)} className='flex flex-row w-[12rem] justify-between gap-[0.68rem] subheading--300 cursor-pointer z-[3] text-white'>
                                 <div className='gap-[0.68rem] flex'>
                                     <span className='font-bold '>{item.num}</span>
                                     <li>{item.li}</li>
