@@ -5,22 +5,22 @@ export const navbar=[
     {   
         num:"00",
         li:"HOME",
-        link:"/"
+        link:"/planetss/"
     },
     {   
         num:"01",
         li:"DESTINATION",
-        link:"/destination/0"
+        link:"/planetss/destination/0"
     },
     {   
         num:"02",
         li:"CREW",
-        link:"/crew"
+        link:"/planetss/crew"
     },
     {   
         num:"03",
         li:"TECHNOLOGY",
-        link:"/technology"
+        link:"/planetss/technology"
     }
 ]
 

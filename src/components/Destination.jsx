@@ -12,16 +12,16 @@ function Destination() {
     const Moveactive=()=>{
 
         let paThname=window.location.pathname
-        if(paThname=="/destination/0"){
+        if(paThname=="/planetss/destination/0"){
             return 0
         }
-        if(paThname=="/destination/1"){
+        if(paThname=="/planetss/destination/1"){
             return 1
         }
-        if(paThname=="/destination/2"){
+        if(paThname=="/planetss/destination/2"){
             return 2
         }
-        if(paThname=="/destination/3"){
+        if(paThname=="/planetss/destination/3"){
             return 3
         }
         

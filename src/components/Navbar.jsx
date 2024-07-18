@@ -11,18 +11,18 @@ function Navbar() {
     const [indexer, setindexer]=useContext(IdIndex)
     const movePage=()=>{
         
-        if(window.location.pathname=="/"){
+        if(window.location.pathname=="/planetss/"){
             return(
                 0
             )
         }
-        else if(window.location.pathname=="/destination"){
+        else if(window.location.pathname=="/planetss/destination"){
             console.log("des")
             return(
                 1
             )
         }
-        else if(window.location.pathname=="/crew"){
+        else if(window.location.pathname=="/planetss/crew"){
             
             console.log("Crew")
             return(
@@ -30,7 +30,7 @@ function Navbar() {
             )
             
         } 
-        else if(window.location.pathname=="/technology"){
+        else if(window.location.pathname=="/planetss/technology"){
             return(
                 3
             )
@@ -64,7 +64,7 @@ function Navbar() {
             <div className='sm:flex hidden gap-[4rem]'>
                 <ul className='flex gap-[3.12rem] ml-[2rem] p-[3rem] pb-0 bg--color lg:pr-[10rem]  lg:pl-[12rem]  backdrop-blur-md  z-[3] relative border-white border-opacity-[0.01] items-center justify-end'>
                     {navbar.map((item, index) => (
-                        <Link to={index==1 ? "/destination/0":item.link}>
+                        <Link to={index==1 ? "/planetss/destination/0":item.link}>
                             <div key={index} onClick={() => setindexer(index)} className='mainnav sm:flex hidden flex-col justify-between items-end gap-[0.68rem] h-[4rem] subheading--300 cursor-pointer z-[3] text-white'>
                                 <div className='flex gap-[0.68rem]'>
                                     <span className='font-bold lg:flex hidden'>{item.num}</span>

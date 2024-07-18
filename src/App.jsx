@@ -18,17 +18,17 @@ function App() {
     const handleIdIndex=()=>{
         let paThname=window.location.pathname
         console.log(paThname.length)
-        if(paThname=="/"){
+        if(paThname=="/planetss/"){
             return 0
         }
-        if(paThname==`/destination/${paThname[paThname.length-1]}`){
+        if(paThname==`/planetss/destination/${paThname[paThname.length-1]}`){
             return 1
         }
 
-        if(paThname=="/crew"){
+        if(paThname=="/planetss/crew"){
             return 2
         }
-        if(paThname=="/technology"){
+        if(paThname=="/planetss/technology"){
             return 3
         }
         console.log(paThname)
@@ -43,13 +43,14 @@ function App() {
             <IdIndex.Provider value={[indexer,setindexer]}>
                 <Navbar />
                 <Routes>
-                    <Route path='/' element={<Home />} />
-                    <Route path='destination' element={<Destination />}>
+                
+                    <Route path='/planetss' element={<Home />} />
+                    <Route path='/planetss/destination' element={<Destination />}>
                         <Route path=":id" element={<Desitnationpg />} />
                     </Route>
-                    <Route path='/crew' element={<Crew />} />
+                    <Route path='/planetss/crew' element={<Crew />} />
 
-                    <Route path='/technology' element={<Technology />} />
+                    <Route path='/planetss/technology' element={<Technology />} />
                 </Routes>
             </IdIndex.Provider>
         </div>
