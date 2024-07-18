@@ -32,7 +32,7 @@ function Destination() {
     const handlIndex = (i) => SetIndex(i)
 
     return (
-        <div className=' dest-bg w-full pr-[1rem] h-full flex pt-[10rem] lg:items-center items-start '>
+        <div className=' dest-bg w-full pr-[1rem] flex pt-[10rem] lg:items-center items-start '>
             <div className='flex flex-col justify-center items-center'>
                 <div className='flex flex-col justify-center lg:items-end items-center'>
                     <ul className='lg:flex flex lg:justify-end justify-center items-center lg:pr-[15.5rem] sm:pb-0 pb-[5rem] lg:pt-0 lg:relative absolute  --fontfamily--100 subheading--200  gap-[2.3rem]'>

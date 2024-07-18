@@ -14,11 +14,11 @@ export const IdIndex = React.createContext()
 
 
 function App() {
-//    const navigation=useNavigate()
-//    useEffect(() => {
+   const navigation=useNavigate()
+   useEffect(() => {
      
-//     navigation("/planetss/")
-//    }, [])
+    navigation("/planetss/")
+   }, [])
    
 
 

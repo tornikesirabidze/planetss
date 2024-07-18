@@ -300,17 +300,15 @@
         height:230px;
     
     }
-
-    
-}
-@media (min-height: 940px){
     .dest-bg, .crew-bg, .tech-bg{
         
         height: auto;
         
     }
 
+    
 }
+
 
 
  
